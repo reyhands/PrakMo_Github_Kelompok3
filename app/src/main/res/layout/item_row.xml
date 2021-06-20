@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/shadow"
+    android:paddingLeft="16dp"
+    android:paddingTop="11dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="10dp"
+    android:radius="13dp"
+    app:itemIconTint="@color/primary"
+    app:itemTextColor="@color/primary">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="95dp"
+        android:layout_height="106dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Judul"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint="NamaRepository"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="247dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-thin"
+            android:maxWidth="100dp"
+            android:maxLines="4"
+            android:text="usernam"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/deksripsi"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-thin"
+            android:maxWidth="100dp"
+            android:maxLines="3"
+            android:text="Ini Adalah Deskirpsi"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="date"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
